@@ -10,7 +10,7 @@ package modelo;
  * @author juan_s.rodriguez_s
  */
 public class OperacionesPila {
-    public <T extends Base > Pila<T> pilaDuplicada(Pila<T> pilaOriginal){
+    public static  <T extends Base > Pila<T> pilaDuplicada(Pila<T> pilaOriginal){
         
         Pila<T> pila2 = new Pila<>();
         Pila<T> pilaaux = new Pila<>();
@@ -33,6 +33,18 @@ public class OperacionesPila {
         
     }
          return pila2;
+    }
+    public static  <T extends Base > Pila<T> invertirpila(Pila<T> pilaOriginal){
+        
+        Pila<T> pila2 = pilaDuplicada(pilaOriginal);
+        Pila<T> pilain = new Pila<>();
+        while(!pila2.estaVacia()){
+            
+            pilain.apilar(pila2.desapilar());
+        }
+        return pilain;
+        
+    
     }
     
 }

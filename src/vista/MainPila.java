@@ -44,7 +44,10 @@ public class MainPila {
         
         
         
-        
+        Pila<Productos> pilai;
+//        OperacionesPila operacion = new OperacionesPila();
+        pilai= OperacionesPila.invertirpila(pila1);
+        System.out.println(""+ pilai.toString());
         
         
     
