@@ -38,8 +38,8 @@ public class MainPila {
         
         
         Pila<Productos> pilaC;
-        OperacionesPila operacion = new OperacionesPila();
-        pilaC= operacion.pilaDuplicada(pila1);
+//        OperacionesPila operacion = new OperacionesPila();
+        pilaC= OperacionesPila.pilaDuplicada(pila1);
         System.out.println(""+ pilaC.toString());
         
         
